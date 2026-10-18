@@ -4,7 +4,7 @@ import Path from 'path';
 dotenv.config();   
 import authRoutes from './routes/auth.route.js';
 import messageRoutes from './routes/message.route.js';
-const Port = process.env.PORT || 3000;
+const PORT = process.env.Port || 3000;
 
 
 const app = express();
@@ -22,4 +22,4 @@ if(process.env.NODE_ENV === 'production'){
     }); 
 }
 
-app.listen(Port,()=>console.log(`Server is running on port ${Port}`)); 
+app.listen(PORT,()=>console.log(`Server is running on port ${Port}`)); 
