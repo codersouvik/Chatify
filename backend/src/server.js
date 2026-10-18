@@ -4,7 +4,7 @@ import Path from 'path';
 dotenv.config();   
 import authRoutes from './routes/auth.route.js';
 import messageRoutes from './routes/message.route.js';
-const Port = process.env.Port || 3000;
+const Port = process.env.PORT || 3000;
 
 
 const app = express();
